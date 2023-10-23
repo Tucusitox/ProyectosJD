@@ -1,0 +1,71 @@
+/**************** ESTILOS PARA LOS ALERTS *****************/
+
+.swal-modal{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 10px rgb(48, 171, 180), inset 0 0 10px rgb(48, 171, 180);
+}
+.swal-modal:hover{
+    transform: scale(1.1);
+}
+.swal-title{
+    color: #0ef;
+}
+.swal-text {
+    text-align: center;
+    color: #0ef;
+}
+.swal-button{
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1.5px solid aqua;
+    color: aqua;
+}
+.swal-button:hover{
+    color: black;
+}
+.swal-icon{
+    background: transparent;
+}
+.swal-icon::before{
+    background: transparent;
+}
+.swal-icon::after{
+    background: transparent;
+}
+.swal-icon--success__line{
+    background: rgb(87, 241, 87);
+}
+.swal-icon--success__ring{
+    border: 3.5px solid rgb(87, 241, 87);
+}
+.swal-icon--success__hide-corners{
+    background: transparent;
+}
+
+/**************** BUSCADOR POR CATEGORIA *****************/
+.buscador{ 
+    width: 30%;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    border: 3px solid rgba(216, 214, 214, 0.2);
+    background: transparent;
+    color: rgb(215, 197, 197);
+    transition: .5s;
+    padding: 5px;
+    cursor: pointer;
+}
+.buscador option{
+    background-color: black;
+}
+.buscador:hover{
+    color: #0ef;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 10px rgb(48, 171, 180), inset 0 0 10px rgb(48, 171, 180);
+    transform: scale(1.1);
+}
+.filtro{
+    display: none;
+}

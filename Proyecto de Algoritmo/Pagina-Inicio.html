@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/Pagina-1.css">
+    <link rel="stylesheet" href="css/alertas.css">
+    <title>Tucusitox</title>
+</head>
+<body>
+    <!-------------- ENCABEZADO CON NAV ----------->
+    <header>
+        <div class="encabezado">
+            <img src="img/LOGO-IUJO.png" alt="logo del proyecto">
+            <select class="buscador" id="buscador">
+                <option value="">Todas las Categorias</option>
+                <option value="celular">celular</option>
+                <option value="Computadora">computadora</option>
+                <option value="Perifericos">perifericos</option>
+                <option value="Audifonos">audifonos</option>
+              </select>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#seccion-1">Ofertas</a></li>
+                    <li><a href="#seccion-2">Productos</a></li>
+                    <li><a href="Logins-Inicio-Registro.html" target="_blank">Inicia Sesión</a></li>
+                </ul>               
+            </nav>
+        </div>
+    </header>
+    <section id="seccion-1">
+            <!-------------- CARRUZEL(BOOSTRAP) ----------->
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="img/Oferta-1.png" class="d-block w-100" alt="imagen-1">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="img/Oferta-2.png" class="d-block w-100" alt="imagen-2">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="img/Oferta-3.webp" class="d-block w-100" alt="imagen-3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </section>
+    <!-------------- SECCION-2 PRODUCTOS DE MUESTRA ----------->
+    <section id="seccion-2">
+        <di class="div-img">
+            <img src="img/PC-EVA01.jpg" alt="Product Image" onclick="escalaProducto(this)">
+        </di>
+        <div class="info-producto">
+            <div class="div-de-prueba">
+                <i class='bx bx-x' onclick="desapareceProducto(this)"></i>
+                <h1>PC MSI Evangelion EVA-01</h1>
+                <p><strong>Información del Producto</strong></p> 
+                <p>CPU INTEL CORE I7 13700KF + C240 EVA E-PROJECT.<br>
+                    BOARD MAG B660 TOMAHAWK EVA E-PROJECT.<br>
+                    GPU GEFORCE RTX 4070.<br>
+                    HDD SSD 1TB M.2 NVME.<br>
+                    RAM 16GB DDR5 1X16 6000MHZ.<br>
+                    CHASIS MPG GUNGNIR 110R EVA E-PROJECT.<br>
+                    FUENTE MAG 650W EVA E-PROJECT.<br>
+                </p>
+                <p><strong>Precio:</strong> 10,534,000$ </p>
+                <p class="categoria"><strong>Categoría:</strong> computadora</p>
+            </div>
+        </div>
+        <di class="div-img">
+            <img src="img/Audifonos.png" alt="Product Image" onclick="escalaProducto(this)">
+        </di>
+        <div class="info-producto">
+            <div class="div-de-prueba">
+                <i class='bx bx-x' onclick="desapareceProducto(this)"></i>
+                <h1>Diadema Gamer Astro A50 Headset + Base PS5</h1>
+                <p><strong>Información del Producto</strong></p> 
+                <p>Batería recargable de ion litio tiene una duración de más de 15 horas.<br>
+                    Sonido envolvente Dolby Headphone 7.1 ofrece una experiencia de audio cinemática 
+                    y 3D en juegos, y emite Dolby de salida a audiencias de streaming.<br>
+                    Almohadillas de tela para confort, forro de cuero sintético para gran 
+                    desempeño acústico.<br>
+                    Carga magnética con acoplamiento y emparejamiento fáciles; indicador de estado de batería, 
+                    emparejamiento y activación/desactivación de Dolby a simple vista.<br>
+                    Transmisor inalámbrico de 5 GHz para jugar con baja latencia.<br>
+                </p>
+                <p><strong>Precio:</strong> 1,400,000$ </p>
+                <p class="categoria"><strong>Categoría:</strong> audifonos</p>
+            </div>
+        </div>
+        <di class="div-img">
+            <img src="img/celular.jpg" alt="Product Image" onclick="escalaProducto(this)">
+        </di>
+        <div class="info-producto">
+            <div class="div-de-prueba">
+                <i class='bx bx-x' onclick="desapareceProducto(this)"></i>
+                <h1>Samsung Galaxy S10e</h1>
+                <p><strong>Información del Producto</strong></p> 
+                <p>DIMENSIONES Y PESO:	142,2,x 69,9 x 7,9 mm, 150 gramos.<br>
+                    PANTALLA:	Dynamic AMOLED 5,8" plana (Flat), Full HD+, 19:9.<br>
+                    PROCESADOR:	Samsung Exynos 9820 (Octa-core, 8 nm).<br>
+                    RAM:	6 GB.<br>
+                    ALMACENAMIENTO:	128 GB Ampliable vía Micro SD con hasta 512 GB adicionales.<br>
+                    SISTEMA OPERATIVO: Android 9 Pie.<br>
+                    CÁMARAS TRASERAS: 16 MP (gran angular f/2.2) FF, Dual Pixel 12 MP (principal) f/1.5-f/2.4 OIS AF.<br>
+                    CÁMARA FRONTAL: Dual Pixel 10 MP AF f/1.9.<br>
+                    BATERÍA:	3.100 mAh, Fast Wireless Charging 2.0, Wireless PowerShare.<br>
+                    SENSORES: Acelerómetro, giroscopio, barómetro, proximidad, brújula.<br>
+                    SEGURIDAD: Lector de huellas capacitivo, reconocimiento facial 2D.<br>
+                    CONECTIVIDAD: 4G/LTE Cat.20, WiFi 802.11ac, Bluetooth 5.0.<br>
+                    OTROS: USB tipo C, GPS dual, NFC.<br>
+                </p>
+                <p><strong>Precio:</strong> 237$</p>
+                <p class="categoria"><strong>Categoría:</strong> celular</p>
+            </div>
+        </div>
+        <di class="div-img">
+            <img src="img/perifericos.jpg" alt="Product Image" onclick="escalaProducto(this)">
+        </di>
+        <div class="info-producto">
+            <div class="div-de-prueba">
+                <i class='bx bx-x' onclick="desapareceProducto(this)"></i>
+                <h1>Kit Teclado Y Mouse Gaming Gamer Luminoso</h1>
+                <p><strong>Información del Producto</strong></p> 
+                <p>Teclado Gaming:<br>
+
+                    Diseño ergonómico y resistente, ideal para largas sesiones de juego.<br>
+                    Retroiluminación LED con luces personalizables en varios colores y efectos.<br>
+                    Teclas programables y macros para asignar comandos y acciones rápidas.<br>
+                    Tecnología anti-ghosting para evitar la pérdida de pulsaciones simultáneas.<br>
+                    Conexión USB para una fácil instalación y compatibilidad con PC y portátiles.<br>
+
+                    Ratón Gaming:<br>
+                    
+                    Sensor de alta precisión y DPI ajustables para un control preciso del cursor.<br>
+                    Diseño ergonómico y cómodo para un agarre firme durante largas sesiones de juego.<br>
+                    Retroiluminación LED con luces personalizables en varios colores y efectos.<br>
+                    Botones programables para asignar funciones y macros personalizadas.<br>
+                    Conexión USB para una fácil instalación y compatibilidad con PC y portátiles.<br>
+                </p>
+                <p><strong>Precio:</strong> 100$</p>
+                <p class="categoria"><strong>Categoría:</strong> perifericos</p>
+            </div>
+        </div>
+   </section>
+    <!-------------------------------- PIE DE PAGINA -------------------------------->
+    <footer>
+        <div class="pie-pagina">
+            <p>&copy; Tucusitox</p>
+        </div>
+    </footer>
+    <script src="js/productosPagina-Inicio.js"></script>
+</body>
+</html>
