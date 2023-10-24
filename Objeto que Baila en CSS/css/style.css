@@ -1,0 +1,329 @@
+body {
+    text-align: right;
+    height: 110vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: cornflowerblue; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.indicacion{
+    position: absolute;
+    background: blueviolet;
+    top: 50px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family: fantasy;
+    color: black; 
+}
+/* firma personal */
+.firma{
+    position: absolute;
+    background: blueviolet;
+    top: 700px;
+    right: 50px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: fantasy;
+    color: black; 
+}
+/* texto con efecto */
+.text{
+    position: absolute;
+    background: blueviolet;
+    top: -120px;
+    left: -120px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 45px;
+    font-family: fantasy;
+    color: black;
+    letter-spacing: 5px;
+    z-index: 5;
+    animation: text 2s infinite;
+    transition: opacity 300ms ease-in-out;
+    opacity: 0;
+    box-shadow: 0px 0px 5px 0px black;
+}
+@keyframes text{
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    0% { transform: scale(1); }
+}
+/* cabeza */
+.cabeza{
+    width: 300px;
+    height: 300px;
+    background: green;
+    border-radius: 50px;
+    position: relative;
+    animation:baile .75s ease 2s infinite;
+}
+@keyframes baile{
+    25% { transform:translateY(20px) skew(-2deg) }
+    0%, 50%, 100% { transform:translateY(0) skew(0) }
+    75% { transform:translateY(20px) skew(2deg) }
+}
+.cabeza:hover .text{
+    opacity: 1;
+  }
+
+/* ojos */
+.ojo-1{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    top: 70px;
+    left: 45px;
+
+}
+.ojo-1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+}
+.ojo-2{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    top: 70px;
+    right: 45px;
+
+}
+.ojo-2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+/* nariz */
+.nariz{
+    width: 10%;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.nariz::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: black;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+.nariz::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: black;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+/* boca */
+.boca{
+    position: absolute;
+    height:75px;
+    width: 200px;
+    border-radius: 35px;
+    background: black;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+/* dientes */
+.diente-1{
+    position: absolute;
+    bottom: 2px;
+    left: 50px;
+    height: 36px;
+    width: 24px;
+    background:white;
+    border-radius: 10px 10px 0 0;
+}
+.diente-2{
+    position: absolute;
+    top: 2px;
+    right: 80px;
+    height: 30px;
+    width: 20px;
+    background:white;
+    border-radius: 0 0 10px 10px;
+}
+.diente-3{
+    position: absolute;
+    bottom: 2px;
+    right: 40px;
+    height: 30px;
+    width: 20px;
+    background:white;
+    border-radius: 10px 10px 0 0;
+}
+/* baba */
+.baba{
+    background: chocolate;
+    position: absolute;
+    bottom: -30px;
+    width: 35px;
+    height: 50px;
+    left: 12px;
+    border-radius: 10px 10px 0 0;
+}
+.baba-1{
+    background: chocolate;
+    position: absolute;
+    bottom: -80px;
+    width: 8px;
+    height: 90px;
+    left: 12px;
+    border-radius: 10px;
+    animation: baba-1 5s infinite;
+}
+.baba-2{
+    background: chocolate;
+    position: absolute;
+    bottom: -100px;
+    width: 8px;
+    height: 100px;
+    left: 26px;
+    border-radius: 10px;
+    animation: baba-2 5s infinite;
+}
+.baba-3{
+    background: chocolate;
+    position: absolute;
+    bottom: -50px;
+    width: 8px;
+    height: 60px;
+    left: 39px;
+    border-radius: 10px;
+    animation: baba-2 5s infinite;
+}
+@keyframes baba-1{
+    0% { transform: translateY(0); }
+    25% { transform: translateY(15px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
+@keyframes baba-2{
+    0% { transform: translateY(0); }
+    25% { transform: translateY(0); }
+    50% { transform: translateY(15px); }
+    75% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+/* brazo derecho */
+.brazo-derecho{
+    width: 100px;
+    height: 50px;
+    background: black;
+    position: absolute;
+    top: 120px;
+    left: -100px;
+    border-radius: 10px 0px 0px 0px;
+}
+.antebrazo-derecho{
+    width: 50px;
+    height: 100px;
+    background: green;
+    position: absolute;
+    top: 170px;
+    left: -100px;
+    border-radius: 0px 0px 10px 10px;
+}
+.antebrazo-derecho::after{
+    content: "";
+    position: absolute;
+    top: 50;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: white;
+    width: 48px;
+    height: 15px;
+    border-radius: 0px 0px 10px 10px;
+}
+/* brazo izquierdo */
+.brazo-izquierdo{
+    width: 100px;
+    height: 50px;
+    background: black;
+    position: absolute;
+    top: 120px;
+    right: -100px;
+    border-radius: 0px 10px 0px 0px;
+}
+.antebrazo-izquierdo{
+    width: 50px;
+    height: 100px;
+    background: green;
+    position: absolute;
+    top: 170px;
+    right: -100px;
+    border-radius: 0px 0px 10px 10px;
+}
+.antebrazo-izquierdo::after{
+    content: "";
+    position: absolute;
+    top: 50;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: white;
+    width: 48px;
+    height: 15px;
+    border-radius: 0px 0px 10px 10px;
+}
+/* boton de musica */
+.boton{
+    position: absolute;
+    background: blueviolet;
+    top: 700px;
+    left: 50px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: fantasy;
+    color: black; 
+    cursor: pointer;
+}
